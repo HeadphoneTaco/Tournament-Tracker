@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-Following Along with a Youtube Tutorial
+Following Along with a YouTube Tutorial
 C# Application from Start to Finish in 24 hours
 Tim Corey
 --------------------------------------------------------------------------------
