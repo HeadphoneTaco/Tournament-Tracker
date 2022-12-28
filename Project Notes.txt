@@ -1,60 +1,98 @@
 --------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 Following Along with a Vid Tutorial
 C# Application from Start to Finish in 24 hours
 Tim Corey
 --------------------------------------------------------------------------------
+Lesson 0
 --------------------------------------------------------------------------------
 -----The Application
 
-A tournament Tracker that sets up a schedule for teams to play each other
- in a single-elimination style of matchups.
+A tournament Tracker that sets up a schedule for teams to play each other in a
+single-elimination style of match-ups.
 
-	Useful for:
-		-Office ping pong tournaments
-		-Rec league playoffs
-		-3v3 basketball
-		-etc...
+Useful for:
+	-Office ping pong tournaments
+	-Rec league playoffs
+	-3v3 basketball
+	-etc...
 --------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-Visual Idea
-
-
+-----Visual Idea
 	   ----------|
-		     |
-		     |----------|
-		     |          |
+			     |
+			     |----------|
+			     |          |
 	   ----------|          |----------|
-                                |          |
-                      ----------|          |----------|
-					   |	      |
-				 ----------|          |
-						      |
-					   	      |----------Winner
-						      |
-			         ----------|	      |
-					   |	      |
-		      ----------|	   |----------|
-				|	   |
-	   ----------|		|----------|
-		     | 	        |
-		     |----------|
-		     |
+                            |          |
+               	  ----------|          |----------|
+									   |	      |
+							 ----------|          |
+											      |
+										   	      |----------Winner
+						    					  |
+					         ----------|	      |
+									   |	      |
+			      ----------|		   |----------|
+							|		   |
+	   ----------|			|----------|
+			     | 	        |
+		    	 |----------|
+			     |
 	   ----------|
 --------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-Technology Utilized
+-----Technology Utilized
 
-	The C# 'tech' encountered includes:
-		-Multi-form WinForms application
-		-In-depth Class Library
-		-SQUL Database
-		-Text File Storage
-		-Dapper
-		-Linq
-		-Interfaces
-		-Emailing from C#
-		-Custom Events
-		-Assorted Debugging
+The C# 'tech' encountered includes:
+	-Multi-form WinForms application
+	-In-depth Class Library
+	-SQL Database
+	-Text File Storage
+	-Dapper
+	-Linq
+	-Interfaces
+	-Emailing from C#
+	-Custom Events
+	-Assorted Debugging
 --------------------------------------------------------------------------------
+Lesson 1 - Initial Planning
 --------------------------------------------------------------------------------
+-----Scenario
+
+Your friends come to you and ask you to create a tournament tracker.
+They are always playing games and want to determine who is the best.
+The idea is that you create a bracket tournament system where the computer will tell them who to play in a single-elimination style bracket.
+At the end, the winner should be identified.
+--------------------------------------------------------------------------------
+-----Requirements
+
+1. Track games played, and their outcome. (Who won)
+2. Multiple competitors play in the tournament.
+3. Create a tournament plan. (Who plays in what order)
+4. Schedule games.
+5. A single loss eliminates a player.
+6. The last player standing is the winner.
+--------------------------------------------------------------------------------
+-----Questions
+
+1. How many players will the tournament handle? Is it variable?
+2. If a tournament has less than the full complement of players, how do we handle it?
+3. Should the ordering of who plays each other be random or ordered by input order?
+4. Should we schedule the games, or are they just played whenever?
+5. If the games are scheduled, how does the system know when to schedule games for?
+6. If the games are played whenever, can a game from the second round be played before the first round is complete?
+7. Does the system need to store a score of some kind, or just who won?
+8. What type of front-end should this system have? (form, webpage, app, etc)
+9. Where will the data be stored?
+10. Will this system handle entry fees, prizes, or other payouts?
+11. What type of reporting is needed?
+12. Who can fill in the results of a game?
+13. Are there varying levels of access?
+14. Should this system contact users about upcoming games?
+15. Is each player on their own, or can teams use this tournament tracker?
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
