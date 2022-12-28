@@ -7,8 +7,7 @@ Lesson 0
 --------------------------------------------------------------------------------
 -----The Application
 
-A tournament Tracker that sets up a schedule for teams to play each other in a
-single-elimination style of match-ups.
+A tournament Tracker that sets up a schedule for teams to play each other in a single-elimination style of match-ups.
 
 Useful for:
 	-Office ping pong tournaments
@@ -17,6 +16,7 @@ Useful for:
 	-etc...
 --------------------------------------------------------------------------------
 -----Visual Idea
+
 	   ----------|
 			     |
 			     |----------|
@@ -89,10 +89,112 @@ At the end, the winner should be identified.
 14. Should this system contact users about upcoming games?
 15. Is each player on their own, or can teams use this tournament tracker?
 --------------------------------------------------------------------------------
+Lesson 2 - Overview Planning
+--------------------------------------------------------------------------------
+-----Questions Review
 
+Q1
+	-How many players will the tournament handle? Is it variable?
+		
+		-The application should be able to handle a variable number of players in a tournament.
 
+Q2
+	-If a tournament has less than the full complement of players, how do we handle it?
+		
+		-A tournament with less than the perfect number(2^n) should end in 'byes'. 
+		'Byes', mean to randomly select players to skip 1st round.
 
+Q3
+	-Should the ordering of who plays each other be random or ordered by input order?
+		
+		-The ordering of the tournament should be random.
 
+Q4
+	-Should we schedule the games, or are they just played whenever?
+		
+		-The games should be played in whatever order and whenever the players want to play them.
 
+Q5
+	-If the games are scheduled, how does the system know when to schedule games for?
+		
+		-They aren't scheduled, so we don't care.
 
+Q6
+	-If the games are played whenever, can a game from the second round be played before the first round is complete?
+		
+		-No. Each round should be fully completed before the next round is displayed.
+
+Q7 
+	-Does the system need to store a score of some kind, or just who won?
+		
+		-Storing a simple score would be nice. 
+		Just a number for each player. 
+		That way, the tracker can be flexible enough to handle
+		a checkers tournament (the winner would have a 1 and the loser a 0) or a basketball tournament.
+
+Q8
+	-What type of front-end should this system have? (form, webpage, app, etc)
+		
+		-The system should be a desktop program for now, but down the road we might want to turn it into an mobile app or a website.
+
+Q9
+	-Where will the data be stored?
+		
+		-Ideally, the data should be stored in a SQL database, but please put in an option to store to a text file instead.
+
+Q10
+	- Will this system handle entry fees, prizes, or other payouts?
+		
+		-Yes. 
+		The tournament should have the option of charging an entry fee. 
+		Prizes should also be an option, where the tournament admin chooses how much money to award a variable number of places. 
+		The total cash amount should not exceed the income from the tournament. 
+		A percentage-based system would also be nice to specify.
+
+Q11
+	- What type of reporting is needed?
+		
+		-A simple report specifying the outcome of the games per round as well as a report that specifies who won and how much they won.
+		These can be just displayed on a form or they can be emailed to tournament competitors and the admin.
+
+Q12
+	- Who can fill in the results of a game?
+
+		-Anyone using the application should be able to fill in the game scores.
+
+Q13
+	- Are there varying levels of access?
+
+		-No.
+		The only method of varied access is if the competitors are not allowed into the application and instead, they do everything via email.
+
+Q14
+	- Should this system contact users about upcoming games?
+
+		-Yes, the system should email users that they are due to play in a round as well as who they are scheduled to play.
+
+Q15
+	- Is each player on their own, or can teams use this tournament tracker?
+
+		-The tournament tracker should be able to handle the addition of other members.
+		All members should be treated as equals in that they all get tournament emails.
+		Teams should also be able to name their teams.
+--------------------------------------------------------------------------------
+-----Big Picture Design
+
+Structure: Windows Form application and CLass Library
+Data: SQL and/or Text File
+Users: One at a time on one application
+
+Key Concepts:
+	-Email
+	-SQL
+	-Custom Events
+	-Error Handling
+	-Interfaces
+	-Random Ordering
+
+Bonus Idea(s):
+	-Texting/SMS
+--------------------------------------------------------------------------------
 
