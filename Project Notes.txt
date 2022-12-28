@@ -1,5 +1,10 @@
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
+Following Along with a Vid Tutorial
+C# Application from Start to Finish in 24 hours
+Tim Corey
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 -----The Application
 
 A tournament Tracker that sets up a schedule for teams to play each other
@@ -36,5 +41,20 @@ Visual Idea
 		     |----------|
 		     |
 	   ----------|
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Technology Utilized
+
+	The C# 'tech' encountered includes:
+		-Multi-form WinForms application
+		-In-depth Class Library
+		-SQUL Database
+		-Text File Storage
+		-Dapper
+		-Linq
+		-Interfaces
+		-Emailing from C#
+		-Custom Events
+		-Assorted Debugging
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
