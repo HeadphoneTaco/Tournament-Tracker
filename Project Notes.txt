@@ -235,3 +235,112 @@ MatchupEntry
 	-Score (double)
 	-ParentMatchup (Matchup)
 --------------------------------------------------------------------------------
+Lesson 4 - User Interface Design
+--------------------------------------------------------------------------------
+-----Tournament Viewer Form
+
+
+	Tournament: <name>
+
+	Round	//Dropdown
+
+			//Unplayed Only Checkbox
+
+	____________________________
+	|matchupListBox				|			Sample Team 1
+	|							|
+	|							|			Score	//Score Displayed
+	|							|
+	|							|					VS				//Score Button
+	|							|				
+	|							|			Sample Team 2
+	|							|
+	-----------------------------			Score	//Score Displayed
+--------------------------------------------------------------------------------
+-----Create Tournament Form
+
+
+	Create Tournament
+
+	Tournament Name					Teams/Players
+	//Entry Field					____________________________
+									|tournamentPlayersListBox	|	//Delete Selected Button
+									|							|
+	Entry Fee   //Entry Field		|							|
+									|							|
+	Select Team	//Create New Button	-----------------------------
+		//Selection Dropdown
+
+		//Add Team Button			Prizes
+									____________________________
+		//Create Prize Button		|prizesListBox				|	//Delete Selected Button
+									|							|
+									|							|
+									-----------------------------
+							//Create Tournament Button
+--------------------------------------------------------------------------------
+-----Create Team Form
+
+
+	Create Team
+
+	Team Name
+	//Entry Field					____________________________
+									|tournamentPlayersListBox	|
+	Select Team Member				|							|
+	//Dropdown Menu					|							|
+		//Add Member Button			|							|
+									|							|
+									|							|
+	Add New Member					|							|
+									|							|
+	First Name		//Entry Field	|							|
+	Last Name		//Entry Field	|							|
+	Email			//Entry Field	|							|
+	Cellphone		//Entry Field	|							|				
+									|							|
+		//Create Member Button		|							|
+									-----------------------------
+
+							//Create Team Button
+--------------------------------------------------------------------------------
+-----Create Prize Form
+
+
+	Create Prize
+
+		Place Number             //Entry Field
+
+		Place Name				 //Entry Field
+
+		Prize Amount			 //Entry Field
+
+						-or-
+
+		Prize Percentage		 //Entry Field
+
+
+				//Create Prize Button
+--------------------------------------------------------------------------------
+-----Tournament Dashboard Form
+
+
+							TOURNAMENT DASHBOARD			
+
+						Load Existing Tournament
+							//Selection Dropdown
+
+						//Load Tournament Button
+
+
+						//Create Tournament Button
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
