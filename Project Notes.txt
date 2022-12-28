@@ -1,7 +1,68 @@
 --------------------------------------------------------------------------------
-Following Along with a Vid Tutorial
+Following Along with a Youtube Tutorial
 C# Application from Start to Finish in 24 hours
 Tim Corey
+--------------------------------------------------------------------------------
+-----Potentially Helpful Comments from the Peanut Gallery
+
+	Sr Viejo
+
+		TIP OF THE DAY:  When comparing against a constant, list the constant first, not last.  
+		That way, if you mistype the comparison (ie. == or !=), the compiler will throw an error and you won't have to spend time debugging, only to find an assignment where comparison was intended.  
+		For example, use "if ( true == variableName )" instead of "if ( variableName == true )" so that if you accidentally entered a single equal sign (ie. "if ( true = variableName )"), the compiler will throw an error.
+
+
+	Fruitcake
+
+		If you're following along in 2022, make sure that the "TrackerUI" project is a 
+		created as a "Windows Forms App", not a "Windows Form App (.NET Framework)". 
+		Otherwise you'll get a problem with the target .NET framework when adding the 
+		TrackerLibrary dependency to the Tracker UI project.
+
+
+	OniFeez
+
+		In case you are programming this in visual studio 2019 and beyond; 
+		it's not enough to just create with 'Class Library' and the like, you'll need to find and choose the options that say 'Class Library (.NET Framework)'. 
+		This is because the normal 'Class Library' does not have the Add References section in the Solution Explorer.
+
+	
+
+
+
+	FoxHoundUnit89
+
+		4:58:00 if anyone else gets to this point and is confused because the reference isn't working, you might have done what I did and created the wrong kind of class library.  
+		The program is not at all clear about this but you have to make sure you pick the right version of a class library, even though they all have identical names.  
+		You must ensure you pick the one that also allows you to target the exact same version of .NET FRAMEWORK that your TrackerUI solution is using.  
+		If you've already gotten this far it's okay. 
+		Just copy all of your scripts into a backup folder for TrackerLibrary, delete the old one, add a new one using the correct version of class library;
+		copy your script backups into the new folder, and then in VS right click the new TrackerLibrary and add existing items.  
+		Select all of your now restored scripts in the new folder and everything is fine.  
+		Redo the reference as instructed in the video and if you did it right it'll work this time.
+
+
+	Unknown User
+
+		If anyone is having issues with seeing the characters (specially in the SQL section) because of low resolution (720p is the max here), you can head over to Tim Corey's channel (link in the description) and watch them there. 
+		He has it in 1080p as the max
+
+
+	
+	Andrzej Klonowski
+
+		Hello Tim, bug found: in 05:30:00 in  validateForm method (CreatePrizeForm.cs) if you just change output to false is wrong. 
+		For example if all of them check are false , but last one is correct, then You'll validate it as an correct which is wrong.
+
+
+
+
+
+
+
+
+
+
 --------------------------------------------------------------------------------
 Lesson 0
 --------------------------------------------------------------------------------
