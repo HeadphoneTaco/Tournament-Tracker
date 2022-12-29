@@ -34,7 +34,11 @@ Tim Corey
 
 		4:58:00 if anyone else gets to this point and is confused because the reference isn't working, you might have done what I did and created the wrong kind of class library.  
 		The program is not at all clear about this but you have to make sure you pick the right version of a class library, even though they all have identical names.  
+		
+		//IMPORTANT
 		You must ensure you pick the one that also allows you to target the exact same version of .NET FRAMEWORK that your TrackerUI solution is using.  
+		//IMPORTANT
+		
 		If you've already gotten this far it's okay. 
 		Just copy all of your scripts into a backup folder for TrackerLibrary, delete the old one, add a new one using the correct version of class library;
 		copy your script backups into the new folder, and then in VS right click the new TrackerLibrary and add existing items.  
@@ -399,8 +403,12 @@ Lesson 4 - User Interface Design
 Lesson 5 - Logic Planning
 --------------------------------------------------------------------------------
 I ain't transcribing that, homie. Cross that bridge when we get there.
+--------------------------------------------------------------------------------
+Lesson 6 - Class Library Creation
+--------------------------------------------------------------------------------
+Tim: "We've been stuck in planning mode."
 
-
+Me: "Yee boy, let's get into it."
 
 
 
