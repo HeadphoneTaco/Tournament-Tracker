@@ -6,25 +6,28 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary
 {
+    /// <summary>
+    /// Represents one prize.
+    /// </summary>
     public class PrizeModel
     {
         /// <summary>
-        /// Represents the place of a team (1st, 2nd, 3rd, etc).
+        /// The place of a team (1st, 2nd, 3rd, etc).
         /// </summary>
         public int PlaceNumber { get; set; }
 
         /// <summary>
-        /// Represents the name of the placed teams (Champions, runner up, etc).
+        /// The description of the placed team (Champion, runner up, etc).
         /// </summary>
         public string PlaceName { get; set; }
 
         /// <summary>
-        /// Represents the amount of a prize in absolute values ($5, 3 jellybeans, 1 high five, etc).
+        /// Amount of a prize in absolute values ($5, 3 jellybeans, 1 high five, etc).
         /// </summary>
         public decimal PrizeAmount { get; set; }
 
         /// <summary>
-        /// Represents the amount of a price in calculated values (10%, 1/3, etc). 
+        /// Amount of a prize in calculated values (10%, 1/3, etc). 
         /// </summary>
         public double PrizePercentage { get; set; }
     }

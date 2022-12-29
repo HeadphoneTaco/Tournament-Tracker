@@ -6,30 +6,33 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary
 {
+    /// <summary>
+    /// Represents a single tournament.
+    /// </summary>
     public class TournamentModel
     {
         /// <summary>
-        /// Represents the name of a tournament.
+        /// Name of the tournament.
         /// </summary>
         public string TournamentName { get; set; }
 
         /// <summary>
-        /// Represents the entry fee of a tournament.
+        /// Entry fee of the tournament.
         /// </summary>
         public decimal EntryFee { get; set; }
 
         /// <summary>
-        /// Represents the collection of existing teams.
+        /// The collection of teams in the tournament.
         /// </summary>
         public List<TeamModel> EnteredTeams { get; set; } = new List<TeamModel>();
         
         /// <summary>
-        /// Represents the collection of existing prizes.
+        /// The collection of prizes in the tournament.
         /// </summary>
         public List<PrizeModel> Prizes { get; set; } = new List<PrizeModel>();
         
         /// <summary>
-        /// Represents the collection of rounds in a tournament.
+        /// The collection of rounds in the tournament.
         /// </summary>
         public List<List<MatchupModel>> Rounds { get; set; } = new List<List<MatchupModel>>();
         
