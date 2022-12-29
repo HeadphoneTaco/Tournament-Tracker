@@ -410,6 +410,13 @@ Tim: "We've been stuck in planning mode."
 
 Me: "Yee boy, let's get into it."
 
+///<summary>
+///This is an xml comment, these are awesome!
+///</summary>
+--------------------------------------------------------------------------------
+Lesson 7 - Form Building
+--------------------------------------------------------------------------------
+
 
 
 
