@@ -416,6 +416,23 @@ Me: "Yee boy, let's get into it."
 --------------------------------------------------------------------------------
 Lesson 7 - Form Building
 --------------------------------------------------------------------------------
+Just concentrate on building the forms, don't worry about code for now.
+
+Use White background instead of default light gray.
+
+Change the font right away, so subsequently created forms inherit that font,
+for consistency.
+
+Metro Studio program from sync fusion to creating icon files.
+Not bothering with that for now.
+
+You can copy/paste objects in a form, but *don't* do that with forms themselves.
+Make sure that duplicated objects have their names updated.
+
+If you select an form object property in the properties window,
+You can then select a different object, and you can immediately start modifying
+the value that both objects share. Such as name or text, for example.
+
 
 
 
