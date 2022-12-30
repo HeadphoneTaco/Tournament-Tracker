@@ -2,7 +2,7 @@
   "profiles": {
     "TrackerUI": {
       "commandName": "Project",
-      "hotReloadEnabled": false
+      "hotReloadEnabled": true
     }
   }
 }
