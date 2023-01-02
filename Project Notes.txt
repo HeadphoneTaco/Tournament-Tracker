@@ -434,7 +434,7 @@ You can then select a different object, and you can immediately start modifying
 the value that both objects share. Such as name or text, for example.
 
 
-
+Group Boxes are a good way to subtly group thingamabobs together
 
 
 
