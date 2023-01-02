@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "TrackerUI": {
-      "commandName": "Project",
-      "hotReloadEnabled": true
-    }
-  }
-}
