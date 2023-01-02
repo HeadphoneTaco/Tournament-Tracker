@@ -238,7 +238,7 @@
             this.createTournamentButton.Name = "createTournamentButton";
             this.createTournamentButton.Size = new System.Drawing.Size(268, 71);
             this.createTournamentButton.TabIndex = 36;
-            this.createTournamentButton.Text = "CREATE TOURNAMENT";
+            this.createTournamentButton.Text = "Create Tournament";
             this.createTournamentButton.UseVisualStyleBackColor = true;
             // 
             // CreateTournamentForm
