@@ -9,3 +9,7 @@ C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\
 C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.csproj.CoreCompileInputs.cache
 C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.exe
 C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.pdb
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.CreatePrizeForm.resources
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.CreateTeamForm.resources
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.CreateTournamentForm.resources
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.TournamentDashboardForm.resources

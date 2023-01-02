@@ -437,5 +437,5 @@ the value that both objects share. Such as name or text, for example.
 Group Boxes are a good way to subtly group thingamabobs together
 
 
-
+Use the properties window dropdown at the top, to double check for missed names and things
 
