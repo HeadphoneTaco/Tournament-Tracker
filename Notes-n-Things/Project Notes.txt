@@ -460,6 +460,39 @@ If nothing is highlighted, then everything is run.
 Lesson 9 - Prize Form Wire Up
 --------------------------------------------------------------------------------
 
+This is spicy territory.
+
+Break the problems down into chunks, and be patient.
+
+
+-Pseudocode
+
+model1
+
+if (using SQL == true)
+{
+	open database connection
+	save the data
+	get back the updated model
+}
+
+if (using text file == true)
+{
+	open text file
+	generate id
+	save the data
+}
+
+"Keep pulling the thread"
+
+
+-How do we get that connection information?
+-How do we connect to two different data sources, to do the same task?
+
+Static class for data source info
+Interface for data sources
+
+
 
 
 
