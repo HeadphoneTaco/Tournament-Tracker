@@ -442,13 +442,23 @@ Use the properties window dropdown at the top, to double check for missed names 
 Lesson 8 - SQL Database Design
 --------------------------------------------------------------------------------
 
-///
-SQL Scripts
-///
+
+When designing tables, make sure that the id row has identity Specification set to 'Yes'
 
 
 
 
+
+-SQL Scripts
+-Manual Database entry
+-Stored Procedures
+
+
+Highlighted sections in a query is what gets executed!
+If nothing is highlighted, then everything is run.
+--------------------------------------------------------------------------------
+Lesson 9 - Prize Form Wire Up
+--------------------------------------------------------------------------------
 
 
 

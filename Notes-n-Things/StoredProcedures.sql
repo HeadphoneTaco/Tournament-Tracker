@@ -1,6 +1,6 @@
 USE [Tournaments]
 GO
-/****** Object: StoredProcedure [dbo].[spPrizes_GetByTournament] Script Date: 2023/1/02 ******/
+/****** Object: StoredProcedure [dbo].[spPrizes_GetByTournament] Script Date: 2023-01-02 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
