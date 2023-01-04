@@ -1,0 +1,9 @@
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerLibrary\bin\Debug\TrackerLibrary.dll
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerLibrary\bin\Debug\TrackerLibrary.pdb
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerLibrary\bin\Debug\System.Data.SqlClient.dll
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerLibrary\bin\Debug\System.Data.SqlClient.xml
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerLibrary\obj\Debug\TrackerLibrary.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerLibrary\obj\Debug\TrackerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerLibrary\obj\Debug\TrackerLibrary.csproj.CopyComplete
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerLibrary\obj\Debug\TrackerLibrary.dll
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerLibrary\obj\Debug\TrackerLibrary.pdb

@@ -491,6 +491,7 @@ if (using text file == true)
 
 Static class for data source info
 Interface for data sources
+Think of interfaces as contracts. All parts of a contract must be fulfilled.
 
 
 

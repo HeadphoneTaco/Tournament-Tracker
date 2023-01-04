@@ -13,3 +13,6 @@ C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\
 C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.CreateTeamForm.resources
 C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.CreateTournamentForm.resources
 C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.TournamentDashboardForm.resources
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\bin\Debug\TrackerLibrary.dll
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\bin\Debug\TrackerLibrary.pdb
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.csproj.CopyComplete
