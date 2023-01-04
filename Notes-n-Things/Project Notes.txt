@@ -495,7 +495,8 @@ Think of interfaces as contracts. All parts of a contract must be fulfilled.
 --------------------------------------------------------------------------------
 Lesson 10 - SQL Connection
 --------------------------------------------------------------------------------
-
-
+-When moving files into folders, add .%foldername% to namespace
+-When renaming classes, use the solution explorer. 
+	This automatically renames the class across the project.
 
 
