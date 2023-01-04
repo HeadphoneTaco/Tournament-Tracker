@@ -16,3 +16,5 @@ C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\
 C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\bin\Debug\TrackerLibrary.dll
 C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\bin\Debug\TrackerLibrary.pdb
 C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\obj\Debug\TrackerUI.csproj.CopyComplete
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\bin\Debug\Dapper.dll
+C:\Users\micha\Documents\Github\Tournament-Tracker\Tournament Tracker\TrackerUI\bin\Debug\Dapper.xml
