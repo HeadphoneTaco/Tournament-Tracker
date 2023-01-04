@@ -500,3 +500,6 @@ Lesson 10 - SQL Connection
 	This automatically renames the class across the project.
 
 
+-Double [Tab] and [Enter] is great!
+
+
