@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-using TrackerLibrary.Model;
 using TrackerLibrary.DataAccess.TextHelpers;
+using TrackerLibrary.Model;
 
 namespace TrackerLibrary.DataAccess
 {
@@ -18,7 +14,7 @@ namespace TrackerLibrary.DataAccess
         {
             // Load the text file
             // Convert the text to List<PrizeModel>
-            List <PrizeModel> prizes = PrizesFile.FullFilePath().LoadFile().ConvertToPrizeModels();
+            List<PrizeModel> prizes = PrizesFile.FullFilePath().LoadFile().ConvertToPrizeModels();
 
             // Find the max ID
             int currentId = 1;
@@ -29,7 +25,7 @@ namespace TrackerLibrary.DataAccess
             }
 
             model.Id = currentId;
-            
+
             // Add the new record with the new ID (max +1)
             prizes.Add(model);
 

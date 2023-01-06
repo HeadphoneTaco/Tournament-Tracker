@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
 using TrackerLibrary.Model;
 
 // Done - Load the text file
@@ -22,7 +18,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
         public static string FullFilePath(this string fileName) // PrizeModels.csv
         {
             // Users\micha\Desktop\Tournament-Tracker\PrizeModels.csv
-            return $"{ ConfigurationManager.AppSettings["filePath"] }\\{ fileName }";
+            return $"{ConfigurationManager.AppSettings["filePath"]}\\{fileName}";
         }
 
         public static List<string> LoadFile(this string file)
@@ -61,7 +57,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
             foreach (PrizeModel p in models)
             {
-                lines.Add($"{ p.Id },{ p.PlaceNumber },{ p.PlaceName},{ p.PrizeAmount },{ p.PrizePercentage }");
+                lines.Add($"{p.Id},{p.PlaceNumber},{p.PlaceName},{p.PrizeAmount},{p.PrizePercentage}");
             }
 
             File.WriteAllLines(fileName.FullFilePath(), lines);

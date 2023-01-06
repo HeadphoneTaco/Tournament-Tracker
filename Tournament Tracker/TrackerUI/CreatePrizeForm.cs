@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrackerLibrary;
-using TrackerLibrary.DataAccess;
 using TrackerLibrary.Model;
 
 namespace TrackerUI
@@ -30,13 +22,13 @@ namespace TrackerUI
             if (ValidateForm())
             {
                 PrizeModel model = new PrizeModel(
-                    placeNameValue.Text, 
-                    placeNumberValue.Text, 
-                    prizeAmountValue.Text, 
+                    placeNameValue.Text,
+                    placeNumberValue.Text,
+                    prizeAmountValue.Text,
                     prizePercentageValue.Text);
 
                 GlobalConfig.Connection.CreatePrize(model);
-                
+
 
                 placeNameValue.Text = "";
                 placeNumberValue.Text = "";
@@ -68,7 +60,7 @@ namespace TrackerUI
 
             if (placeNameValue.Text.Length == 0)
             {
-                output = false; 
+                output = false;
             }
 
             decimal prizeAmount = 0;
@@ -79,7 +71,7 @@ namespace TrackerUI
 
             if (prizeAmountValid == false || prizePercentageValid == false)
             {
-                output= false;
+                output = false;
 
             }
 
