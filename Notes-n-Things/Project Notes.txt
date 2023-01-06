@@ -505,3 +505,6 @@ Lesson 10 - SQL Connection
 Lesson 11 - Text Connection
 --------------------------------------------------------------------------------
 
+Create Text ConnectorProcessor
+
+
