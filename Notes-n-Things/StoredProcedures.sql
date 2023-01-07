@@ -2,6 +2,86 @@
 --
 USE [Tournaments]
 GO
+/****** Object:  StoredProcedure [dbo].[spPeople_GetAll]    Script Date: 2023-01-06 6:43:27 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[spPeople_GetAll]
+
+	@FirstName nvarchar(100),
+	@LastName nvarchar(100),
+	@EmailAddress nvarchar(100),
+	@CellphoneNumber varchar(20)
+
+AS
+BEGIN
+
+	SET NOCOUNT ON
+
+	SELECT FirstName, LastName, EmailAddress, CellphoneNumber
+	FROM dbo.People
+	WHERE FirstName = @FirstName 
+	AND	  LastName = @LastName 
+	AND   EmailAddress = @EmailAddress
+	AND   CellphoneNumber = @CellphoneNumber;
+END
+--
+--
+USE [Tournaments]
+GO
+/****** Object:  StoredProcedure [dbo].[spPeople_GetByLastName]    Script Date: 2023-01-06 6:07:03 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[spPeople_GetByLastName]
+
+	@LastName nvarchar(100)
+
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+
+	SELECT *
+	FROM dbo.People
+	WHERE LastName = @LastName;
+END
+--
+--
+USE [Tournaments]
+GO
+/****** Object:  StoredProcedure [dbo].[spPeople_Insert]    Script Date: 2023-01-06 4:59:48 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[spPeople_Insert] 
+	@FirstName nvarchar(100),
+	@LastName nvarchar(100),
+	@EmailAddress nvarchar(100),
+	@CellphoneNumber varchar(20),
+	@id int = 0 output
+
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+
+	INSERT INTO dbo.People (FirstName, LastName, EmailAddress, CellphoneNumber)
+	VALUES (@FirstName, @LastName, @EmailAddress, @CellphoneNumber);
+
+	SELECT @id=SCOPE_IDENTITY();
+
+END
+--
+--
+USE [Tournaments]
+GO
 /****** Object: StoredProcedure [dbo].[spPrizes_GetByTournament] Script Date: 2023-01-02 ******/
 SET ANSI_NULLS ON
 GO
@@ -12,8 +92,7 @@ ALTER PROCEDURE [dbo].[spPrizes_GetByTournament]
     @TournamentId int
 AS
 BEGIN
-        -- SET NOCOUNT ON added to prevent extra result sets from
-        -- interfering with SELECT statements.
+
     SET NOCOUNT ON;
 
     SELECT p.*
@@ -53,30 +132,3 @@ BEGIN
 END
 --
 --
-USE [Tournaments]
-GO
-/****** Object:  StoredProcedure [dbo].[spPeople_Insert]    Script Date: 2023-01-06 4:59:48 PM ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-
-ALTER PROCEDURE [dbo].[spPeople_Insert] 
-	@FirstName nvarchar(100),
-	@LastName nvarchar(100),
-	@EmailAddress nvarchar(100),
-	@CellphoneNumber varchar(20),
-	@id int = 0 output
-
-AS
-BEGIN
-
-	SET NOCOUNT ON;
-
-	INSERT INTO dbo.People (FirstName, LastName, EmailAddress, CellphoneNumber)
-	VALUES (@FirstName, @LastName, @EmailAddress, @CellphoneNumber);
-
-	SELECT @id=SCOPE_IDENTITY();
-
-END
-
