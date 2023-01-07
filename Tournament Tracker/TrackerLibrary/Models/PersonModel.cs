@@ -28,5 +28,16 @@
         /// The primary cell phone number of the person.
         /// </summary>
         public string CellphoneNumber { get; set; }
+
+        /// <summary>
+        /// The full name of the person.
+        /// </summary>
+        public string FullName
+        {
+            get
+            {
+                return $"{ FirstName } {LastName}";
+            }
+        }
     }
 }
