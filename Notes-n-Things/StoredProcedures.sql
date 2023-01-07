@@ -2,7 +2,7 @@
 --
 USE [Tournaments]
 GO
-/****** Object:  StoredProcedure [dbo].[spPeople_GetAll]    Script Date: 2023-01-06 6:43:27 PM ******/
+/****** Object:  StoredProcedure [dbo].[spPeople_GetAll]    Script Date: 2023-01-06 7:00:44 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -10,22 +10,14 @@ GO
 
 ALTER PROCEDURE [dbo].[spPeople_GetAll]
 
-	@FirstName nvarchar(100),
-	@LastName nvarchar(100),
-	@EmailAddress nvarchar(100),
-	@CellphoneNumber varchar(20)
-
 AS
 BEGIN
 
 	SET NOCOUNT ON
 
-	SELECT FirstName, LastName, EmailAddress, CellphoneNumber
+	SELECT *
 	FROM dbo.People
-	WHERE FirstName = @FirstName 
-	AND	  LastName = @LastName 
-	AND   EmailAddress = @EmailAddress
-	AND   CellphoneNumber = @CellphoneNumber;
+
 END
 --
 --
