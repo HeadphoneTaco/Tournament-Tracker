@@ -516,5 +516,8 @@ Alternatively, go to the property window, click on the lightning bolt, scroll to
 Lesson 13 - Create Team Form (Part 2)
 --------------------------------------------------------------------------------
 
-
+Wiring up Adding people to the list of team members
+--------------------------------------------------------------------------------
+Lesson 14 - Create Team Form (Part 3)
+--------------------------------------------------------------------------------
 
