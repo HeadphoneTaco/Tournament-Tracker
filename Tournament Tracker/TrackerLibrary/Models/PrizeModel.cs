@@ -6,7 +6,7 @@
     public class PrizeModel
     {
         /// <summary>
-        /// The unique identified for the prize.
+        /// The unique identifier for the prize.
         /// </summary>
         public int Id { get; set; }
 
