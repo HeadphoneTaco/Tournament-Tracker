@@ -538,3 +538,8 @@ Meaning, inside of our fully built house, we can say:
 
 We can look outside, read the address off of the mailbox; and pass it along.
 In regards to a Class Instantiation; that is.
+--------------------------------------------------------------------------------
+Lesson 17 - Create Tournament (Part 3)
+--------------------------------------------------------------------------------
+-Saving the Data
+-Setting up the individual matches in the tournament
