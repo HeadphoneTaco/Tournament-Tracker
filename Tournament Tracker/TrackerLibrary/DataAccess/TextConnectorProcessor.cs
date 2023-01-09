@@ -86,6 +86,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                 t.Id = int.Parse(cols[0]);
                 t.TeamName = cols[1];
 
+                // Takes the 3rd column, splits it by pipe char, places into array called 'personIds'
                 string[] personIds = cols[2].Split('|');
 
                 foreach (string id in personIds)
