@@ -1,7 +1,7 @@
 ﻿namespace TrackerLibrary.Model
 {
     /// <summary>
-    /// Represents one prize.
+    /// Represents what the prize is for the given place.
     /// </summary>
     public class PrizeModel
     {
@@ -11,17 +11,17 @@
         public int Id { get; set; }
 
         /// <summary>
-        /// The place of a team (1st, 2nd, 3rd, etc).
+        /// The numeric identifier of the place (1st, 2nd, 3rd, etc).
         /// </summary>
         public int PlaceNumber { get; set; }
 
         /// <summary>
-        /// The description of the placed team (Champion, runner up, etc).
+        /// The friendly name of the place (Champion, runner up, etc).
         /// </summary>
         public string PlaceName { get; set; }
 
         /// <summary>
-        /// Amount of a prize in absolute values ($5, 3 jellybeans, 1 high five, etc).
+        /// Amount of a prize in absolute values ($5, 0 jellybeans, 1 high five, etc).
         /// </summary>
         public decimal PrizeAmount { get; set; }
 
