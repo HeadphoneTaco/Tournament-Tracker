@@ -441,12 +441,13 @@ Use the properties window dropdown at the top, to double check for missed names 
 --------------------------------------------------------------------------------
 Lesson 8 - SQL Database Design
 --------------------------------------------------------------------------------
-
+M$-2016-SQL Server Management Studio
 
 When designing tables, make sure that the id row has identity Specification set to 'Yes'
 
-
-
+Tip - Enable table re-create setting.
+Tools> Options> Designers>
+Uncheck: "Prevent saving changes that require table re-creation"
 
 
 -SQL Scripts
@@ -543,3 +544,12 @@ Lesson 17 - Create Tournament (Part 3)
 --------------------------------------------------------------------------------
 -Saving the Data
 -Setting up the individual matches in the tournament
+
+-Visual Studio Settings
+Options> Text Editor> Code Cleanup>
+"Run Code Cleanup Profile on Save."
+Set to Profile 1, 'Format Document' only. Remove all options from profile 2.
+
+
+
+
