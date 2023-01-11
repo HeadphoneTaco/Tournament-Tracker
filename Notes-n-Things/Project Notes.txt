@@ -549,7 +549,9 @@ Lesson 17 - Create Tournament (Part 3)
 Options> Text Editor> Code Cleanup>
 "Run Code Cleanup Profile on Save."
 Set to Profile 1, 'Format Document' only. Remove all options from profile 2.
-
+--------------------------------------------------------------------------------
+Lesson 18 - Create Tournament (Part 4)
+--------------------------------------------------------------------------------
 
 
 
