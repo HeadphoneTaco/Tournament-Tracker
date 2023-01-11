@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using TrackerLibrary.Model;
-
 namespace TrackerLibrary.DataAccess
 
 {

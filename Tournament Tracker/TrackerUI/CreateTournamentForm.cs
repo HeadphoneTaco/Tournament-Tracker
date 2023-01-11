@@ -10,14 +10,11 @@ namespace TrackerUI
         List<TeamModel> availableTeams = GlobalConfig.Connection.GetTeam_All();
         List<TeamModel> selectedTeams = new List<TeamModel>();
         List<PrizeModel> selectedPrizes = new List<PrizeModel>();
-
-
         public CreateTournamentForm()
         {
             InitializeComponent();
             WireUpLists();
         }
-
         private void WireUpLists()
         {
 
@@ -34,12 +31,10 @@ namespace TrackerUI
             prizesListBox.DisplayMember = "PlaceName";
 
         }
-
         private void tournamentPlayersListBox_SelectedIndexChanged(object sender, System.EventArgs e)
         {
 
         }
-
         private void addTeamButton_Click(object sender, System.EventArgs e)
         {
 
@@ -53,7 +48,6 @@ namespace TrackerUI
                 WireUpLists();
             }
         }
-
         private void addPrizeButton_Click(object sender, System.EventArgs e)
         {
             // Call the CreatePrizeForm
@@ -61,7 +55,6 @@ namespace TrackerUI
             frm.Show();
 
         }
-
         public void PrizeComplete(PrizeModel model)
         {
 
@@ -70,19 +63,16 @@ namespace TrackerUI
             selectedPrizes.Add(model);
             WireUpLists();
         }
-
         public void TeamComplete(TeamModel model)
         {
             selectedTeams.Add(model);
             WireUpLists();
         }
-
         private void createNewTeamLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             CreateTeamForm frm = new CreateTeamForm(this);
             frm.Show();
         }
-
         private void removeSelectedPlayerButton_Click(object sender, System.EventArgs e)
         {
 
@@ -103,7 +93,6 @@ namespace TrackerUI
 
 
         }
-
         private void removeSelectedPrizeButton_Click(object sender, System.EventArgs e)
         {
             PrizeModel p = (PrizeModel)prizesListBox.SelectedItem;
@@ -115,7 +104,6 @@ namespace TrackerUI
                 WireUpLists();
             }
         }
-
         private void createTournamentButton_Click(object sender, System.EventArgs e)
         {
             // Validate Data
@@ -147,6 +135,9 @@ namespace TrackerUI
 
             // TODO - Wire up our matchups
             // Order the list randomly
+            // If list is not large enough, add in 'byes'
+            // Create first Matchup Round
+            // Create following Rounds as needed
 
 
             // Create Tournament Entry

@@ -3,21 +3,16 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using TrackerLibrary.Model;
-
 //@PlaceNumber int,
 //@PlaceName nvarchar(50),
 //@PrizeAmount money,
 //@PrizePercentage float,
 //@id int = 0 output
-
-
-
 namespace TrackerLibrary.DataAccess
 {
     public class SqlConnector : IDataConnection
     {
         private const string db = "Tournaments";
-
         /// <summary>
         /// Saves a new person to the database
         /// </summary>
@@ -42,7 +37,6 @@ namespace TrackerLibrary.DataAccess
 
             }
         }
-
         /// <summary>
         /// Saves a new prize to the database
         /// </summary>
@@ -67,7 +61,6 @@ namespace TrackerLibrary.DataAccess
 
             }
         }
-
         public TeamModel CreateTeam(TeamModel model)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString(db)))
@@ -98,7 +91,6 @@ namespace TrackerLibrary.DataAccess
 
             }
         }
-
         public void CreateTournament(TournamentModel model)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString(db)))
@@ -107,11 +99,10 @@ namespace TrackerLibrary.DataAccess
                 SaveTournamentPrizes(connection, model);
                 SaveTournamentEntries(connection, model);
 
-            
+
 
             }
         }
-
         private void SaveTournament(IDbConnection connection, TournamentModel model)
         {
             var p = new DynamicParameters();
@@ -122,11 +113,11 @@ namespace TrackerLibrary.DataAccess
             connection.Execute("dbo.spTournaments_Insert", p, commandType: CommandType.StoredProcedure);
 
             model.Id = p.Get<int>("@id");
-           
-        }
 
+        }
         private void SaveTournamentPrizes(IDbConnection connection, TournamentModel model)
-        {  foreach (PrizeModel pz in model.Prizes)
+        {
+            foreach (PrizeModel pz in model.Prizes)
             {
 
                 var p = new DynamicParameters();
@@ -138,7 +129,6 @@ namespace TrackerLibrary.DataAccess
                 connection.Execute("dbo.spTournamentPrizes_Insert", p, commandType: CommandType.StoredProcedure);
             }
         }
-
         private void SaveTournamentEntries(IDbConnection connection, TournamentModel model)
         {
             foreach (TeamModel tm in model.EnteredTeams)
@@ -155,8 +145,7 @@ namespace TrackerLibrary.DataAccess
 
             }
         }
-
-    public List<PersonModel> GetPerson_All()
+        public List<PersonModel> GetPerson_All()
         {
             List<PersonModel> output;
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString(db)))
@@ -167,7 +156,6 @@ namespace TrackerLibrary.DataAccess
             return output;
 
         }
-
         public List<TeamModel> GetTeam_All()
         {
             List<TeamModel> output;

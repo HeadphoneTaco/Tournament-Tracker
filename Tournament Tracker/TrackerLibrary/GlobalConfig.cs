@@ -1,12 +1,10 @@
 ﻿using System.Configuration;
 using TrackerLibrary.DataAccess;
-
 namespace TrackerLibrary
 {
     public static class GlobalConfig
     {
         public static IDataConnection Connection { get; private set; }
-
         public static void InitializeConnections(DatabaseType db)
         {
             if (db == DatabaseType.Sql)
@@ -23,7 +21,6 @@ namespace TrackerLibrary
                 Connection = text;
             }
         }
-
         public static string CnnString(string name)
         {
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;
