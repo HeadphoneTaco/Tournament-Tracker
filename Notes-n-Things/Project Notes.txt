@@ -555,3 +555,10 @@ Lesson 18 - Create Tournament (Part 4)
 
 -Separation between foundational logic and UI
 -
+--------------------------------------------------------------------------------
+Lesson 19 - Create Tournament (Part 5)
+--------------------------------------------------------------------------------
+
+
+
+
