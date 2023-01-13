@@ -220,7 +220,16 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
                 MatchupEntryModel me = new MatchupEntryModel();
                 me.Id = int.Parse(cols[0]);
-                me.TeamCompeting = LookupTeamById(int.Parse(cols[1]));
+                if (cols[1].Length == 0)
+                {
+                    me.TeamCompeting = null;
+                }
+                else
+                {
+                    me.TeamCompeting = LookupTeamById(int.Parse(cols[1]));
+                }
+
+
                 me.Score = double.Parse(cols[2]);
 
                 int parentId = 0;
@@ -307,7 +316,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
             matchup.Id = currentId;
 
-
+            matchups.Add(matchup);
 
             foreach (MatchupEntryModel entry in matchup.Entries)
             {
@@ -358,8 +367,13 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                 {
                     parent = e.ParentMatchup.Id.ToString();
                 }
+                string teamCompeting = "";
+                if (e.TeamCompeting != null)
+                {
+                    teamCompeting = e.TeamCompeting.Id.ToString();
+                }
 
-                lines.Add($"{e.Id},{e.TeamCompeting.Id},{e.Score}{parent}");
+                lines.Add($"{e.Id},{teamCompeting},{e.Score}{parent}");
             }
 
             File.WriteAllLines(GlobalConfig.MatchupEntryFile.FullFilePath(), lines);
