@@ -558,7 +558,8 @@ Lesson 18 - Create Tournament (Part 4)
 --------------------------------------------------------------------------------
 Lesson 19 - Create Tournament (Part 5)
 --------------------------------------------------------------------------------
-
+- Drag the line execution indicator
+- Left side of the screen for debugging/tinkering
 
 
 

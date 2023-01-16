@@ -318,13 +318,32 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
             matchups.Add(matchup);
 
+            List<string> lines = new List<string>();
+
+            // id= 0
+            // entries = 1(pipe delimited by id)
+            // winner = 2
+            // matchup round = 3
+            foreach (MatchupModel m in matchups)
+            {
+                string winner = "";
+                if (m.Winner != null)
+                {
+                    winner = m.Winner.Id.ToString();
+                }
+
+                lines.Add($"{m.Id},{""},{winner}, {m.MatchupRound}");
+            }
+
+            File.WriteAllLines(GlobalConfig.MatchupFile.FullFilePath(), lines);
+
             foreach (MatchupEntryModel entry in matchup.Entries)
             {
                 entry.SaveEntryToFile(matchupEntryFile);
             }
 
             // Save to File
-            List<string> lines = new List<string>();
+            lines = new List<string>();
 
             // id= 0
             // entries = 1(pipe delimited by id)
