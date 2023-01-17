@@ -114,7 +114,7 @@ namespace TrackerLibrary.DataAccess
             connection.Execute("dbo.spTournaments_Insert", p, commandType: CommandType.StoredProcedure);
 
             model.Id = p.Get<int>("@id");
-
+            // TODO - Figure out why this is failing
         }
         private void SaveTournamentPrizes(IDbConnection connection, TournamentModel model)
         {
