@@ -32,7 +32,7 @@ namespace TrackerUI
         {
             TournamentModel tm = (TournamentModel)loadExistingTournamentDropDown.SelectedItem;
 
-            TournamentViewerForm frm = new TournamentViewerForm();
+            TournamentViewerForm frm = new TournamentViewerForm(tm);
             frm.Show();
         }
     }

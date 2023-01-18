@@ -315,20 +315,26 @@ namespace TrackerLibrary.DataAccess
             {
 
                 var p = new DynamicParameters();
-                p.Add("@id", model.Id);
-                p.Add("@WinnerId", model.Winner.Id);
+                if (model.Winner != null)
+                {
+                    p.Add("@id", model.Id);
+                    p.Add("@WinnerId", model.Winner.Id);
 
 
-                connection.Execute("dbo.spMatchups_Update", p, commandType: CommandType.StoredProcedure);
+                    connection.Execute("dbo.spMatchups_Update", p, commandType: CommandType.StoredProcedure);
+                }
 
                 foreach (MatchupEntryModel me in model.Entries)
                 {
-                    p = new DynamicParameters();
-                    p.Add("@id", me.Id);
-                    p.Add("@TeamcompetingId", me.TeamCompeting.Id);
-                    p.Add("@Score", me.Score);
+                    if (me.TeamCompeting != null)
+                    {
+                        p = new DynamicParameters();
+                        p.Add("@id", me.Id);
+                        p.Add("@TeamcompetingId", me.TeamCompeting.Id);
+                        p.Add("@Score", me.Score);
 
-                    connection.Execute("dbo.spMatchupEntries_Update", p, commandType: CommandType.StoredProcedure);
+                        connection.Execute("dbo.spMatchupEntries_Update", p, commandType: CommandType.StoredProcedure);
+                    }
                 }
 
 
