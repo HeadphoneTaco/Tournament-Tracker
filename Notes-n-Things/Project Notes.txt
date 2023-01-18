@@ -587,6 +587,9 @@ Lesson 23 - Tournament Viewer (Part 2)
 --------------------------------------------------------------------------------
 Lesson 24 - Refactoring
 --------------------------------------------------------------------------------
-
-
+-I am confused about the thought process behind passing in/out models
+-Why not leave them in? RE: IDataConnection voiding
+--------------------------------------------------------------------------------
+Lesson 25 - Error Handling
+--------------------------------------------------------------------------------
 
