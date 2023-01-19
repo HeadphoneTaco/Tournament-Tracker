@@ -32,12 +32,13 @@
         /// <summary>
         /// The full name of the person.
         /// </summary>
-        public string FullName
-        {
-            get
-            {
-                return $"{FirstName} {LastName}";
-            }
-        }
+        // It's unused, so commenting out for now to see what breaks.
+        //public string FullName
+        //{
+        //    get
+        //    {
+        //        return $"{FirstName} {LastName}";
+        //    }
+        //}
     }
 }

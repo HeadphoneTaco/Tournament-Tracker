@@ -40,6 +40,9 @@ namespace TrackerLibrary.Model
         /// </summary>
         public List<List<MatchupModel>> Rounds { get; set; } = new List<List<MatchupModel>>();
 
+        /// <summary>
+        /// A method that allows a particular tournament to be marked as completed.
+        /// </summary>
         public void CompleteTournament()
         {
             OnTournamentComplete?.Invoke(this, DateTime.Now);

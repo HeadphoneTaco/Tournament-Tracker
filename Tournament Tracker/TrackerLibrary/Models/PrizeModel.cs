@@ -29,12 +29,18 @@
         /// Amount of a prize in calculated values (10%, 1/3, etc). 
         /// </summary>
         public double PrizePercentage { get; set; }
-
         public PrizeModel()
         {
 
         }
 
+        /// <summary>
+        /// An instance of the PrizeModel class.
+        /// </summary>
+        /// <param name="placeName"></param>
+        /// <param name="placeNumber"></param>
+        /// <param name="prizeAmount"></param>
+        /// <param name="prizePercentage"></param>
         public PrizeModel(string placeName, string placeNumber, string prizeAmount, string prizePercentage)
         {
             PlaceName = placeName;
@@ -51,6 +57,5 @@
             double.TryParse(prizePercentage, out prizePercentageValue);
             PrizePercentage = prizePercentageValue;
         }
-
     }
 }

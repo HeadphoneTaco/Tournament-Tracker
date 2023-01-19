@@ -4,7 +4,6 @@
     /// Represents one team in a matchup.
     /// </summary>
     public class MatchupEntryModel
-
     {
         /// <summary>
         /// The unique identifier for the matchup entry.
