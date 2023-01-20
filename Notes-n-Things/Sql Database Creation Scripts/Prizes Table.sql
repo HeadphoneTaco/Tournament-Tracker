@@ -1,8 +1,8 @@
 -- Creates the Prizes table
--- All the 'ON/OFF' stuff seems to be fluff, far as I can tell
 USE [Tournaments]
 GO
 
+/****** Object:  Table [dbo].[Prizes]    Script Date: 2023-01-19 5:03:39 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -14,26 +14,11 @@ CREATE TABLE [dbo].[Prizes](
 	[PlaceNumber] [int] NOT NULL,
 	[PlaceName] [nvarchar](50) NOT NULL,
 	[PrizeAmount] [money] NOT NULL,
-    [PrizePercentage] [float] NOT NULL,
-CONSTRAINT [PK_Prizes] PRIMARY KEY CLUSTERED
+	[PrizePercentage] [float] NOT NULL,
+CONSTRAINT [PK_Prizes] PRIMARY KEY CLUSTERED 
 (
-    [id] ASC
+	[id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
 GO
-
-ALTER TABLE [dbo].[Prizes] ADD CONSTRAINT [DF_Prizes_PrizeAmount] DEFAULT ((0)) FOR [PrizeAmount]
-GO
-
-ALTER TABLE [dbo].[Prizes] ADD CONSTRAINT [DF_Prizes_PrizePercentage] DEFAULT ((0)) FOR [PrizePercentage]
-GO
-
-
-
-
-
-
-
-
-
