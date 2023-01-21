@@ -53,7 +53,6 @@ namespace TrackerLibrary.DataAccess
                 model.Id = p.Get<int>("@id");
             }
         }
-
         /// <summary>
         /// Saves a new team to the database.
         /// </summary>
@@ -91,6 +90,11 @@ namespace TrackerLibrary.DataAccess
                 TournamentLogic.UpdateTournamentResults(model);
             }
         }
+        /// <summary>
+        /// Saves a tournament to the Sql database.
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <param name="model"></param>
         private void SaveTournament(IDbConnection connection, TournamentModel model)
         {
             var p = new DynamicParameters();
@@ -103,6 +107,11 @@ namespace TrackerLibrary.DataAccess
             model.Id = p.Get<int>("@id");
             // TODO - Figure out why this is failing
         }
+        /// <summary>
+        /// Saves a prize to the Sql database.
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <param name="model"></param>
         private void SaveTournamentPrizes(IDbConnection connection, TournamentModel model)
         {
             foreach (PrizeModel pz in model.Prizes)
@@ -116,6 +125,11 @@ namespace TrackerLibrary.DataAccess
                 connection.Execute("dbo.spTournamentPrizes_Insert", p, commandType: CommandType.StoredProcedure);
             }
         }
+        /// <summary>
+        /// Saves teams entered in a tournament to the Sql database.
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <param name="model"></param>
         private void SaveTournamentEntries(IDbConnection connection, TournamentModel model)
         {
             foreach (TeamModel tm in model.EnteredTeams)
@@ -128,6 +142,11 @@ namespace TrackerLibrary.DataAccess
                 connection.Execute("dbo.spTournamentEntries_Insert", p, commandType: CommandType.StoredProcedure);
             }
         }
+        /// <summary>
+        /// Saves the rounds of a tournament to the Sql database.
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <param name="model"></param>
         private void SaveTournamentRounds(IDbConnection connection, TournamentModel model)
         {
             foreach (List<MatchupModel> round in model.Rounds)
@@ -167,6 +186,10 @@ namespace TrackerLibrary.DataAccess
                 }
             }
         }
+        /// <summary>
+        /// Fetches all people from the Sql database.
+        /// </summary>
+        /// <returns></returns>
         public List<PersonModel> GetPerson_All()
         {
             List<PersonModel> output;
