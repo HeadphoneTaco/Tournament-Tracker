@@ -11,22 +11,31 @@ namespace TrackerLibrary
         public const string MatchupFile = "MatchupModels.csv";
         public const string MatchupEntryFile = "MatchupEntryModel.csv";
         public static IDataConnection Connection { get; private set; }
+
+        /// <summary>
+        /// Makes a connection to the database.
+        /// </summary>
+        /// <param name="db"></param>
         public static void InitializeConnections(DatabaseType db)
         {
             if (db == DatabaseType.Sql)
             {
-                // TODO - Set up the SQL Connector properly
                 SqlConnector sql = new SqlConnector();
                 Connection = sql;
             }
 
             else if (db == DatabaseType.TextFile)
             {
-                // TODO - Create Text Connection
                 TextConnector text = new TextConnector();
                 Connection = text;
             }
         }
+
+        /// <summary>
+        /// Specifies which database is being connected to.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>Either Sql or Textfile.</returns>
         public static string CnnString(string name)
         {
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;
@@ -37,6 +46,5 @@ namespace TrackerLibrary
             return ConfigurationManager.AppSettings[key];
 
         }
-
     }
 }
