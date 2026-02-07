@@ -106,6 +106,7 @@ namespace TrackerLibrary
             GlobalConfig.Connection.CompleteTournament(model);
 
             // Email notifications disabled - email functionality removed from application
+            // Tournament completion is still tracked via CompleteTournament call above
         }
 
         private static decimal CalculatePrizePayout(this PrizeModel prize, decimal totalIncome)

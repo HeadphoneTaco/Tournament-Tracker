@@ -64,6 +64,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                 p.Id = int.Parse(cols[0]);
                 p.FirstName = cols[1];
                 p.LastName = cols[2];
+                // Legacy data files may have email (cols[3]) and phone (cols[4]) which we now ignore
                 output.Add(p);
             }
             return output;

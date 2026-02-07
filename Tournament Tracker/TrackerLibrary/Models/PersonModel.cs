@@ -26,7 +26,7 @@
         {
             get
             {
-                return $"{FirstName} {LastName}";
+                return $"{FirstName ?? ""} {LastName ?? ""}".Trim();
             }
         }
     }
