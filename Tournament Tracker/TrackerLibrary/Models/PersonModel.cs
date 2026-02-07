@@ -20,25 +20,14 @@
         public string LastName { get; set; }
 
         /// <summary>
-        /// The primary email address of the person.
-        /// </summary>
-        public string EmailAddress { get; set; }
-
-        /// <summary>
-        /// The primary cell phone number of the person.
-        /// </summary>
-        public string CellphoneNumber { get; set; }
-
-        /// <summary>
         /// The full name of the person.
         /// </summary>
-        // It's unused, so commenting out for now to see what breaks.
-        //public string FullName
-        //{
-        //    get
-        //    {
-        //        return $"{FirstName} {LastName}";
-        //    }
-        //}
+        public string FullName
+        {
+            get
+            {
+                return $"{FirstName} {LastName}";
+            }
+        }
     }
 }

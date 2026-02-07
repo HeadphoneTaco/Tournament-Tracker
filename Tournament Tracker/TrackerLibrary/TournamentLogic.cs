@@ -75,44 +75,8 @@ namespace TrackerLibrary
 
         private static void AlertPersonToNewRound(PersonModel p, string teamName, MatchupEntryModel competitor)
         {
-            if (p.EmailAddress.Length == 0)
-            {
-                return;
-            }
-
-
-            string to = "";
-            string subject = "";
-
-            StringBuilder body = new StringBuilder();
-
-
-            if (competitor != null)
-            {
-                subject = $"You have a new matchup with {competitor.TeamCompeting.TeamName}";
-
-                body.AppendLine("<h1>You have a new matchup</h1>");
-                body.Append("<Strong>Competitor: </strong> ");
-                body.Append(competitor.TeamCompeting.TeamName);
-                body.AppendLine();
-                body.AppendLine();
-                body.AppendLine("Have a great time!");
-                body.AppendLine("~Tournament Tracker");
-
-            }
-            else
-            {
-                subject = $"You have a bye week this round";
-
-                body.AppendLine("Enjoy your round off!");
-                body.AppendLine("~Tournament Tracker");
-            }
-
-            to = p.EmailAddress;
-
-
-
-            EmailLogic.SendEmail(to, subject, body.ToString());
+            // Email notifications disabled - email functionality removed from application
+            return;
         }
 
         private static int CheckCurrentRound(this TournamentModel model)
@@ -141,79 +105,7 @@ namespace TrackerLibrary
         {
             GlobalConfig.Connection.CompleteTournament(model);
 
-            TeamModel winners = model.Rounds.Last().First().Winner;
-            TeamModel runnerUp = model.Rounds.Last().First().Entries.Where(x => x.TeamCompeting != winners).First().TeamCompeting;
-
-            decimal winnerPrize = 0;
-            decimal runnerUpPrize = 0;
-
-            if (model.Prizes.Count > 0)
-            {
-                decimal totalIncome = model.EnteredTeams.Count * model.EntryFee;
-
-                PrizeModel firstPlacePrize = model.Prizes.Where(x => x.PlaceNumber == 1).FirstOrDefault();
-                PrizeModel secondPlacePrize = model.Prizes.Where(x => x.PlaceNumber == 2).FirstOrDefault();
-
-                if (firstPlacePrize != null)
-                {
-                    winnerPrize = firstPlacePrize.CalculatePrizePayout(totalIncome);
-                }
-
-                if (firstPlacePrize != null)
-                {
-                    runnerUpPrize = firstPlacePrize.CalculatePrizePayout(totalIncome);
-                }
-            }
-
-            // Send Email to all tournament
-            string subject = "";
-
-            StringBuilder body = new StringBuilder();
-
-
-
-            subject = $"In {model.TournamentName},{winners.TeamName} has won!";
-
-            body.AppendLine("<h1>You have a WINNER!</h1>");
-            body.AppendLine("<p>Congratulations to our winner on a great tournament!</p>");
-            body.AppendLine("<br />");
-
-            if (winnerPrize > 0)
-            {
-                body.AppendLine($"<p>{winners.TeamName} will recieve ${winnerPrize}</p>");
-                body.AppendLine();
-            }
-
-            if (runnerUpPrize > 0)
-            {
-                body.AppendLine($"<p>{runnerUp.TeamName} will recieve ${runnerUpPrize}</p>");
-                body.AppendLine();
-            }
-
-
-            body.AppendLine("<p>Thanks for a great tournament everyone!</p>");
-            body.AppendLine("~Tournament Tracker");
-
-            List<string> bcc = new List<string>();
-
-            foreach (TeamModel t in model.EnteredTeams)
-            {
-                foreach (PersonModel p in t.TeamMembers)
-                {
-                    if (p.EmailAddress.Length > 0)
-                    {
-                        bcc.Add(p.EmailAddress);
-
-                    }
-                }
-            }
-
-
-            EmailLogic.SendEmail(new List<string>(), bcc, subject, body.ToString());
-
-            // Complete Tournament
-            model.CompleteTournament();
-
+            // Email notifications disabled - email functionality removed from application
         }
 
         private static decimal CalculatePrizePayout(this PrizeModel prize, decimal totalIncome)
