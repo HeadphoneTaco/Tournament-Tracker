@@ -49,6 +49,7 @@
             // 
             // tournamentNameValue
             // 
+            this.tournamentNameValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tournamentNameValue.Location = new System.Drawing.Point(63, 152);
             this.tournamentNameValue.Name = "tournamentNameValue";
             this.tournamentNameValue.Size = new System.Drawing.Size(331, 35);
@@ -78,6 +79,7 @@
             // 
             // entryFeeValue
             // 
+            this.entryFeeValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.entryFeeValue.Location = new System.Drawing.Point(223, 232);
             this.entryFeeValue.Name = "entryFeeValue";
             this.entryFeeValue.Size = new System.Drawing.Size(105, 35);
@@ -97,6 +99,7 @@
             // 
             // selectTeamDropDown
             // 
+            this.selectTeamDropDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.selectTeamDropDown.FormattingEnabled = true;
             this.selectTeamDropDown.Location = new System.Drawing.Point(63, 360);
             this.selectTeamDropDown.Name = "selectTeamDropDown";

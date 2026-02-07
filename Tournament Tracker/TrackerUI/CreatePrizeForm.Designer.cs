@@ -54,6 +54,7 @@
             // 
             // placeNumberValue
             // 
+            this.placeNumberValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.placeNumberValue.Location = new System.Drawing.Point(275, 140);
             this.placeNumberValue.Name = "placeNumberValue";
             this.placeNumberValue.Size = new System.Drawing.Size(227, 35);
@@ -72,6 +73,7 @@
             // 
             // placeNameValue
             // 
+            this.placeNameValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.placeNameValue.Location = new System.Drawing.Point(275, 209);
             this.placeNameValue.Name = "placeNameValue";
             this.placeNameValue.Size = new System.Drawing.Size(227, 35);
@@ -91,6 +93,7 @@
             // 
             // prizeAmountValue
             // 
+            this.prizeAmountValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prizeAmountValue.Location = new System.Drawing.Point(275, 278);
             this.prizeAmountValue.Name = "prizeAmountValue";
             this.prizeAmountValue.Size = new System.Drawing.Size(227, 35);
@@ -110,6 +113,7 @@
             // 
             // prizePercentageValue
             // 
+            this.prizePercentageValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prizePercentageValue.Location = new System.Drawing.Point(304, 452);
             this.prizePercentageValue.Name = "prizePercentageValue";
             this.prizePercentageValue.Size = new System.Drawing.Size(227, 35);

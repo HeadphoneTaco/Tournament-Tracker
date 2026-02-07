@@ -48,6 +48,7 @@
             // 
             // loadExistingTournamentDropDown
             // 
+            this.loadExistingTournamentDropDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadExistingTournamentDropDown.FormattingEnabled = true;
             this.loadExistingTournamentDropDown.Location = new System.Drawing.Point(70, 153);
             this.loadExistingTournamentDropDown.Name = "loadExistingTournamentDropDown";

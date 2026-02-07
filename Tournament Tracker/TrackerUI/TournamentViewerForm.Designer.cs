@@ -79,6 +79,7 @@
             // 
             // roundDropDown
             // 
+            this.roundDropDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundDropDown.FormattingEnabled = true;
             this.roundDropDown.Location = new System.Drawing.Point(162, 144);
             this.roundDropDown.Name = "roundDropDown";
@@ -135,6 +136,7 @@
             // 
             // teamOneScoreValue
             // 
+            this.teamOneScoreValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.teamOneScoreValue.Location = new System.Drawing.Point(554, 341);
             this.teamOneScoreValue.Name = "teamOneScoreValue";
             this.teamOneScoreValue.Size = new System.Drawing.Size(100, 35);
@@ -142,6 +144,7 @@
             // 
             // teamTwoScoreValue
             // 
+            this.teamTwoScoreValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.teamTwoScoreValue.Location = new System.Drawing.Point(554, 559);
             this.teamTwoScoreValue.Name = "teamTwoScoreValue";
             this.teamTwoScoreValue.Size = new System.Drawing.Size(100, 35);

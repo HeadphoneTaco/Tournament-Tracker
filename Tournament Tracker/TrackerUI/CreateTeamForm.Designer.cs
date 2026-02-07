@@ -52,6 +52,7 @@
             // 
             // teamNameValue
             // 
+            this.teamNameValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.teamNameValue.Location = new System.Drawing.Point(21, 116);
             this.teamNameValue.Name = "teamNameValue";
             this.teamNameValue.Size = new System.Drawing.Size(410, 35);
@@ -98,6 +99,7 @@
             // 
             // selectTeamMemberDropDown
             // 
+            this.selectTeamMemberDropDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.selectTeamMemberDropDown.FormattingEnabled = true;
             this.selectTeamMemberDropDown.Location = new System.Drawing.Point(21, 222);
             this.selectTeamMemberDropDown.Name = "selectTeamMemberDropDown";
@@ -150,6 +152,7 @@
             // 
             // lastNameValue
             // 
+            this.lastNameValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lastNameValue.Location = new System.Drawing.Point(192, 115);
             this.lastNameValue.Name = "lastNameValue";
             this.lastNameValue.Size = new System.Drawing.Size(227, 43);
@@ -168,6 +171,7 @@
             // 
             // firstNameValue
             // 
+            this.firstNameValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstNameValue.Location = new System.Drawing.Point(192, 53);
             this.firstNameValue.Name = "firstNameValue";
             this.firstNameValue.Size = new System.Drawing.Size(227, 43);
@@ -186,6 +190,7 @@
             // 
             // teamMembersListBox
             // 
+            this.teamMembersListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.teamMembersListBox.FormattingEnabled = true;
             this.teamMembersListBox.ItemHeight = 30;
             this.teamMembersListBox.Location = new System.Drawing.Point(563, 119);
